@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Câu 1: Tạo form Đăng ký tài khoản</h2>
+    <p><b>Yêu cầu</b>: Tạo form <b>Đăng ký tài khoản</b> như bên dưới</p>
+    <form action="xu-ly-dang-ky.php" method="POST">
+        <label for="Ho_ten">Họ tên:</label> <br>
+        <input id="Ho_ten" name="Ho_ten" placeholder="Ví dụ: levana"> <br>
+        <label for="my_email">Email:</label> <br>
+        <input type="email" id="my_email" name="Email" placeholder="Ví dụ: levana@gmail.com"> <br>
+        <label for="mat_khau">Mật khẩu:</label> <br>
+        <input type="password" id="mat_khau" name="password"> <br> <br>
+        <input type="submit" value="Đăng ký">
+    </form>
+
+    <h2>Câu 2: Tạo form Đăng ký chi tiết</h2>
+    <p><b>Yêu cầu</b>: Tạo form <b>Đăng ký chi tiết</b> như bên dưới</p>
+    <form action="xu-ly-dang-ky-chi-tiet.php" method="POST">
+        <label for="Ho_ten1">Họ tên:</label> <br>
+        <input id="Ho_ten1" name="Ho_ten"> <br>
+        <label for="my_email1">Email:</label> <br>
+        <input type="email" id="my_email1" name="Email"> <br>
+        <label for="mat_khau1">Mật khẩu:</label> <br>
+        <input type="password" id="mat_khau1" name="password"> <br>
+        <label for="xac_nhan_mat_khau1">Xác nhận mật khẩu:</label> <br>
+        <input type="password" id="xac_nhan_mat_khau1" name="password1"> <br>
+        <label>Giới tính:</label> <br>
+        <input type="radio" id="Nam" name="Gioi_tinh" value="Nam">
+        <label for="Nam">Nam</label> <br>
+        <input type="radio" id="Nu" name="Gioi_tinh" value="Nu">
+        <label for="Nu">Nữ</label> <br>
+        <input type="radio" id="Khac" name="Gioi_tinh" value="Khac">
+        <label for="Khac">Khác</label> <br>
+        <label for="Quoc_gia">Quốc gia:</label> <br>
+        <select id="Quoc_gia" name="Quoc_gia">
+            <option value="Vietnam">Việt Nam</option>
+            <option value="Thailan">Thái Lan</option>
+            <option value="Hanquoc">Hàn Quốc</option>
+        </select>
+        <br> <br>
+        <button>Đăng ký</button>
+    </form>
+
+    <h2>Câu 3: Tạo form Đánh giá sản phẩm</h2>
+    <p><b>Yêu cầu</b>: Tạo form <b>Đánh giá sản phẩm</b> như bên dưới</p>
+    <form action="xu-ly-danh-gia.php" method="POST">
+        <label for="TenSanPham">Tên sản phẩm:</label> <br>
+        <input id="TenSanPham" name="Ten_San_Pham"> <br>
+        <label>Đánh giá:</label> <br>
+        <input type="radio" id="5sao" name="Danh_gia" value="5sao">
+        <label for="5sao">5 sao</label> <br>
+        <input type="radio" id="4sao" name="Danh_gia" value="4sao">
+        <label for="4sao">4 sao</label> <br>
+        <input type="radio" id="3sao" name="Danh_gia" value="3sao">
+        <label for="3sao">3 sao</label> <br>
+        <input type="radio" id="2sao" name="Danh_gia" value="2sao">
+        <label for="2sao">2 sao</label> <br>
+        <input type="radio" id="1sao" name="Danh_gia" value="1sao">
+        <label for="1sao">1 sao</label> <br>
+        <label for="Binh_luan">Bình luận:</label> <br>
+        <textarea id="Binh_luan" name="Binh_luan" rows="4"></textarea>
+        <br> <br>
+        <button>Gửi đánh giá</button>
+    </form>
+
+    <h2>Câu 4: Tạo form Liên hệ</h2>
+    <p><b>Yêu cầu</b>: Tạo form <b>Liên hệ</b> như bên dưới.</p>
+    <form action="xu-ly-lien-he.php" method="POST">
+        <label for="Ho_ten2">Họ và tên:</label> <br>
+        <input id="Ho_ten2" name="Ho_ten"> <br>
+        <label for="my_email2">Email:</label> <br>
+        <input type="email" id="my_email2" name="Email"> <br>
+        <label for="Noi_dung">Nội dung tin nhắn:</label> <br>
+        <textarea id="Noi_dung" name="Noi_dung" rows="4"></textarea>
+        <br> <br>
+        <button>Gửi tin nhắn</button>
+    </form>
+
+    <h2>Câu 5: Tạo form Đặt phòng khách sạn</h2>
+    <p><b>Yêu cầu</b>: Tạo form <b>Đặt phòng khách sạn</b> như bên dưới.</p>
+    <form action="xu-ly-dat-phong.php" method="POST">
+        <label for="Ho_ten3">Họ và tên:</label> <br>
+        <input id="Ho_ten3" name="Ho_ten"> <br>
+        <label for="my_email3">Email:</label> <br>
+        <input type="email" id="my_email3" name="Email"> <br>
+        <label for="NgayNhanPhong">Ngày nhận phòng:</label> <br>
+        <input type="date" id="NgayNhanPhong" name="Ngay_nhan_phong"> <br>
+        <label for="NgayTraPhong">Ngày trả phòng:</label> <br>
+        <input type="date" id="NgayTraPhong" name="Ngay_tra_phong"> <br>
+        <label for="Loai_phong">Loại phòng:</label> <br>
+        <select id="Loai_phong" name="Loai_phong">
+            <option value="thuong">Phòng thường</option>
+            <option value="VIP">Phòng VIP</option>
+            <option value="Gia_dinh">Phòng gia đình</option>
+        </select>
+        <br>
+        <label for="Yeu_cau">Yêu cầu đặc biệt:</label> <br>
+        <textarea id="Yeu_cau" name="Yeu_cau_dac_biet" rows="4"></textarea> <br>
+        <br>
+        <br>
+        <button>Đặt Phòng</button>
+    </form>
+    
+    <h2>Câu 6: Tạo form Tìm kiếm</h2>
+    <p><b>Yêu cầu</b>: Tạo form <b>Tìm kiếm</b> như bên dưới.</p>
+    <form action="xu-ly-tim-kiem.php" method="GET">
+        <input name="Tim_kiem" placeholder="Nhập từ khóa...">
+        <input type="submit" value="Tìm kiếm">
+    </form>
+
+</body>
+</html>
